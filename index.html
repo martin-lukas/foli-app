@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>F&ouml;li buses and routes</title>
+    <meta name="author" content="Martin Lukáš">
+    <meta name="description" content="Exercise 3 for the 2st assignment">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <form onsubmit="return submitRoute();">
+        <label for="bus-line-input">Select the bus line:</label>
+        <input type="text" id="bus-line-input" />
+        <input type="submit" value="Submit" id="submit-button" />
+    </form>
+    <div id="error"></div>
+    <div id="map"></div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB6WyYraQNJywmaiCb827T1fKEDCVdjVY&callback=initMap"></script>
+</body>
+</html>

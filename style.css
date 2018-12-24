@@ -1,0 +1,55 @@
+/* CSS reset */
+html, body, div, p, a, img, ul, li, form,
+label, table, tbody, thead, tr, th, td, input, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10px;
+    margin: auto;
+    font: normal 13px Arial, serif;
+}
+
+@media only screen and (max-width: 400px) {}
+
+#error {
+    color: red;
+    font-weight: bold;
+    padding-left: 15px;
+    height: 1em;
+}
+
+.center {
+    text-align: center;
+}
+
+#map {
+    margin: auto;
+    height: 400px;
+}
+
+input[type="text"] {
+    border: 1px solid black;
+    padding: 2px;
+}
+
+input[type="submit"] {
+    border: 1px solid black;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+
+
+
+
+
