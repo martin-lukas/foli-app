@@ -1,8 +1,5 @@
-# Föli App
-This project is an alternative to the official Föli app, which is a public transport application for cities in Finland.
+# Föli App - tracking buses in Turku, Finland
 
-Initially a course project while being an exchange student in Finland, I decided to improve it a bit even after the end of the course.
+This website allows you to see where all the buses for each route in the city of Turku, Finland.
 
-Planned functionality:
-- better user interface
-- show users location together with the buses
+This project was made for a web development course at the University of Turku, Finland.
