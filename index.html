@@ -1,23 +1,39 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>F&ouml;li buses and routes</title>
-    <meta name="author" content="Martin Lukáš">
-    <meta name="description" content="Exercise 3 for the 2st assignment">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+  <title>F&ouml;li App | Public Transport tracking in Turku, Finland</title>
+  <meta content="Martin Lukáš" name="author">
+  <meta content="Exercise 3 for the 2nd assignment" name="description">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="style.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
+
 <body>
+<div id="container">
+  <div id="header">
+    <h1>Föli App</h1>
+  </div>
+  <div id="content-area">
+
     <form onsubmit="return submitRoute();">
-        <label for="bus-line-input">Select the bus line:</label>
-        <input type="text" id="bus-line-input" />
-        <input type="submit" value="Submit" id="submit-button" />
+      <label for="bus-line-input">Select the bus line:</label>
+      <input id="bus-line-input" type="text"/>
+      <input id="submit-button" type="submit" value="Submit"/>
     </form>
     <div id="error"></div>
     <div id="map"></div>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB6WyYraQNJywmaiCb827T1fKEDCVdjVY&callback=initMap"></script>
+
+    <div id="footer">
+      &copy; 2020 Martin Lukáš | You can find more on my
+      <a href="https://github.com/martin-lukas">GitHub</a>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+<script async
+        defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyn1Kv-ukBULQ-6rgaZ1Jl1zo_G4qtJCQ&callback=initMap"></script>
 </body>
 </html>
