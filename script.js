@@ -8,6 +8,13 @@ let routeShortName;
 let routeShown = false;
 let busesShown = false;
 
+resetError();
+
+function resetError() {
+    document.getElementById("error").style.display = "none";
+    document.getElementById("error").innerHTML = "";
+}
+
 function refreshBuses() {
     if (busesShown) {
         clearBuses();
@@ -16,7 +23,7 @@ function refreshBuses() {
 }
 
 function submitRoute() {
-    document.getElementById("error").innerHTML = "";
+    resetError();
     if (routeShown) {
         clearRoute();
         if (busesShown) {
@@ -35,6 +42,7 @@ function submitRoute() {
     }
     const routeTrip = JSON.parse(getHttp("https://data.foli.fi/gtfs/trips/route/" + routeId))[0];
     if (routeTrip === "1") {
+        document.getElementById("error").style.display = "block";
         document.getElementById("error").innerHTML = "Route with this number doesn't exist.";
         return;
     }
@@ -75,6 +83,7 @@ function drawRoute(routeCoordinates) {
 
 function drawBuses(buses) {
     if (buses.length === 0) {
+        document.getElementById("error").style.display = "block";
         document.getElementById("error").innerHTML = "No active busMarkers found on this route.";
     } else {
         let busesCoordinates = getBusesCoordinates(buses);
