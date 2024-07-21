@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <title>F&ouml;li App | Public Transport tracking in Turku, Finland</title>
   <meta content="Martin Lukáš" name="author">
-  <meta content="Exercise 3 for the 2nd assignment" name="description">
+  <meta content="A small web app to see bus routes and current positions in Turku, Finland." name="description">
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <link href="style.css" rel="stylesheet">
@@ -11,29 +12,29 @@
 </head>
 
 <body>
-<div id="container">
-  <div id="header">
-    <h1>Föli App</h1>
-  </div>
-  <div id="content-area">
+  <div id="container">
+    <div id="header">
+      <h1>Föli App</h1>
+    </div>
+    <div id="content-area">
 
-    <form onsubmit="return submitRoute();">
-      <label for="bus-line-input">Select the bus line:</label>
-      <input id="bus-line-input" type="text"/>
-      <input id="submit-button" type="submit" value="Submit"/>
-    </form>
-    <div id="error"></div>
-    <div id="map"></div>
+      <form onsubmit="return submitRoute();">
+        <label for="bus-line-input">Select the bus line:</label>
+        <input id="bus-line-input" type="text" />
+        <input id="submit-button" type="submit" value="Submit" />
+      </form>
+      <div id="error"></div>
+      <div id="map"></div>
 
-    <div id="footer">
-      &copy; 2020 Martin Lukáš | You can find more on my
-      <a href="https://github.com/martin-lukas">GitHub</a>
+      <div id="footer">
+        &copy; 2024 Martin Lukáš | You can find more on my
+        <a href="https://github.com/martin-lukas">GitHub</a>
+      </div>
     </div>
   </div>
-</div>
-<script src="script.js"></script>
-<script async
-        defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyn1Kv-ukBULQ-6rgaZ1Jl1zo_G4qtJCQ&callback=initMap"></script>
+  <script src="script.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsVY0QJw98O_TarIHJJWt7H0ImMcdJwKs&callback=initMap"></script>
 </body>
+
 </html>
